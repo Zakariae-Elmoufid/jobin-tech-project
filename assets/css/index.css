@@ -453,6 +453,7 @@ form button {
     gap: 30px;
     border-radius: 50px;
     margin: 15px;
+    background-image: url("/assets/images/backgroud-about-2.webp");
 
 }
 
@@ -473,9 +474,39 @@ form button {
     width: 120px;
     height: 45px;
 }
+.image-about-2{
+    width: 300px;
+}
 
 
 /*jobs section*/
+
+.section-jobs-head{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px 10px;
+}
+.section-jobs-head h3{
+    display: flex;
+    justify-self: flex-start;
+    color: #3076D7;
+}
+.section-jobs-head h1{
+    display: flex;
+    justify-self: flex-start;
+    font-size: 2rem;    
+}
+.section-jobs-head p{
+    display: flex;
+    justify-self: flex-end;
+    text-decoration: none;
+    background-color: #3076D7;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
 .jobs{
     display: flex;
     flex-wrap: wrap;
