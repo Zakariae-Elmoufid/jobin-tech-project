@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +8,38 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <title>AlaouiJob</title>
 </head>
+
 <body>
 
     <header>
         <div class="logo">
-            <img src="assets/images/image.png" alt="logo">
+            <img src="assets/images/mainLogo.svg" alt="AlaouiJob Logo">
         </div>
-
-        <div class="menu-burger">
-            <i class="fa-solid fa-bars"></i> 
-        </div>
-
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Find Jobs</a></li>
-            <li><a href="">Post a Job</a></li>
-            <li><a href="">Contact us</a></li>
-        </ul>
-
-        <div class="compte">
-            <button class="sing-up">
-                <a >Sing Up</a>
-                <i class="fa-solid fa-right-to-bracket"></i>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Find Jobs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Post a Job</a></li>
+            </ul>
+        </nav>
+        <div class="right-buttons">
+            <button class="signinbtn">
+                <img src="assets/images/sign-in-icon-button.svg" alt="">
+                <p>Sign in</p>
             </button>
-            <button class="log-in">
-                <a>Log In</a>
-                <i class="fa-solid fa-right-to-bracket"></i>
+            <button class="signupbtn">
+                <img src="assets/images/sign-up-icon-button.svg" alt="">
+                <p>Sign Up</p>
             </button>
+            
         </div>
     </header>
+    
 
     <section class="hero">
         <div>
-            <h1>Find a job that aligns with <br/> interests and skills</h1>
+            <h1>Find a job that aligns with <br /> interests and skills</h1>
             <p>Thousands of jobs in all the leading sector are waiting for you.</p>
             <form>
                 <input class="inp-1" type="text" placeholder="job title keyboard...">
@@ -52,30 +52,245 @@
         </div>
     </section>
 
-    <section>
-        <div>
-            <h3>Jobs by categories</h3>
-            <h1>Choose Your Desired <br/> Category</h1>
+
+    <section class="categories">
+        <div class="container">
+            <h2><span>Jobs by Categories</span><br>Choose Your Desired Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="assets/images/businessDeveloppement.svg" alt="Business Development Icon">
+                    <h3>9,100 Jobs</h3>
+                    <p>Business Développement</p>
+                </div>
+                <div class="category-card">
+                    <img src="assets/images/customerServices.svg" alt="Customer Services Icon">
+                    <h3>1,500 Jobs</h3>
+                    <p>Customer Services</p>
+                </div>
+                <div class="category-card">
+                    <img src="assets/images/salesNDmarketing.svg" alt="Sales and Marketing Icon">
+                    <h3>9,100 Jobs</h3>
+                    <p>Sales and Marketing</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="about-1">
-        <div>
-            <img src="assets/images/ILLUSTRATION.webp" alt="">
+
+    <section class="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="assets/images/ILLUSTRATION.webp" alt="About Illustration">
+            </div>
+            <div class="about-text">
+                <h3>about</h3>
+                <h2>Millions of jobs. Find the one that’s right for you.</h2>
+                <ul>
+                    <li><img src="assets/images/checkIcon.svg" alt="icon"> Full lifetime access</li>
+                    <li><img src="assets/images/checkIcon.svg" alt="icon"> 20+ downloadable resources</li>
+                    <li><img src="assets/images/checkIcon.svg" alt="icon"> Certificate of completion</li>
+                    <li><img src="assets/images/checkIcon.svg" alt="icon"> Free Trial 7 Days</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <div>
-                <h3>About</h3>
-                <h1>Millions of jobs. Find the<br> one that’s right for you.</h1>
-                <div class="icons-content">
-                    <div>
-                       <img src="assets/images/iconFullLifeTimeAccess.svg" alt="">
-                        <h1>Full lifetime access</h1>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <section class="how-it-works">
+        <div class="content">
+            <h2>How it Works</h2>
+            <h3>Millions of jobs. Find the one that’s right for you.</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number" style="background-color: #6A9BF9;">01</div>
+                    <div class="step-text">
+                        <h4>Register Your Account</h4>
+                        <p>You need to create an account to find the best and preferred job.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background-color: #FBB540;">02</div>
+                    <div class="step-text">
+                        <h4>Search Your Job</h4>
+                        <p>After creating an account, search for your favorite job.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background-color: #EC78A7;">03</div>
+                    <div class="step-text">
+                        <h4>Apply For Dream Job</h4>
+                        <p>After creating the account, you have to apply for the desired job.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background-color: #82DAB9;">04</div>
+                    <div class="step-text">
+                        <h4>Upload Your Resume</h4>
+                        <p>Upload your resume after filling all the relevant information.</p>
                     </div>
                 </div>
             </div>
-            <div></div>
+        </div>
+        <div class="image">
+            <img src="assets/images/main-bg.png" alt="Sign Up Illustration">
         </div>
     </section>
+    <section class="top-companies">
+        <h3>Top companies hiring now</h3>
+        <div class="companies">
+            <img src="assets/images/google.svg" alt="">
+            <img src="assets/images/microsoft.svg" alt="">
+            <img src="assets/images/flipkart.svg" alt="">
+            <img src="assets/images/ibm.svg" alt="">
+        </div>
+    </section>
+    <section class="about-2">
+        <div class="about-text-2">
+            <h3> about</h3>
+            <h1>We help you connect <br>with the organizer</h1>
+            <p>Get paid easily and security. Use our resources to become<br> independent and showcase your professional
+                skills.</p>
+            <button>Read More</button>
+        </div>
+        <div class="image-about-2">
+            <img src="assets/images/about-image-2.PNG" alt="">
+        </div>
+    </section>
+
+    <section class="jobs">
+        <div class="parent">
+            <div class="intirship">
+                <label for="intership">intership</label>
+            </div>
+            <div class="two-days">
+                <label for="two-days">2 days ago</label>
+            </div>
+            <div class="grid-picture">
+                <img src="assets/images/google.svg" alt="">
+            </div>
+            <div class="grid-title">
+                <h1>senior Full stack develloper</h1>
+            </div>
+            <div  class="under-title-grid">
+                <h3>Capgemini</h3>
+            </div>
+            <div class="grid-location">
+            <p>casablanca, maroc</p>
+            </div>
+            <div class="salary">
+                <p>Salary: <span style="color: red;">$ 30,000 - $55,000</span></p>
+            </div>
+            <div class="grid-button">
+                <button>apply now</button>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="intirship">
+                <label for="intership">intership</label>
+            </div>
+            <div class="two-days">
+                <label for="two-days">2 days ago</label>
+            </div>
+            <div class="grid-picture">
+                <img src="assets/images/flipkart.svg" alt="">
+            </div>
+            <div class="grid-title">
+                <h1>senior Full stack develloper</h1>
+            </div>
+            <div  class="under-title-grid">
+                <h3>Capgemini</h3>
+            </div>
+            <div class="grid-location">
+            <p>casablanca, maroc</p>
+            </div>
+            <div class="salary">
+                <p>Salary: <span style="color: red;">$ 30,000 - $55,000</span></p>
+            </div>
+            <div class="grid-button">
+                <button>apply now</button>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="intirship">
+                <label for="intership">intership</label>
+            </div>
+            <div class="two-days">
+                <label for="two-days">2 days ago</label>
+            </div>
+            <div class="grid-picture">
+                <img src="assets/images/ibm.svg" alt="">
+            </div>
+            <div class="grid-title">
+                <h1>senior Full stack develloper</h1>
+            </div>
+            <div  class="under-title-grid">
+                <h3>Capgemini</h3>
+            </div>
+            <div class="grid-location">
+            <p>casablanca, maroc</p>
+            </div>
+            <div class="salary">
+                <p>Salary: <span style="color: red;">$ 30,000 - $55,000</span></p>
+            </div>
+            <div class="grid-button">
+                <button>apply now</button>
+            </div>
+        </div>
+
+
+
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="assets/images/image.png" alt="AlouiJob Logo" />
+          </div>      
+          <div class="footer-links">
+            <div class="quick-links">
+              <h3>Quick Link</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Admin</a></li>
+              </ul>
+            </div>
+      
+            <div class="candidate-links">
+              <h3>Candidate</h3>
+              <ul>
+                <li><a href="#">Browse Jobs</a></li>
+                <li><a href="#">Browse Employers</a></li>
+                <li><a href="#">Candidate Dashboard</a></li>
+                <li><a href="#">Saved Jobs</a></li>
+              </ul>
+            </div>
+      
+            <div class="employer-links">
+              <h3>Employers</h3>
+              <ul>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#">Browse Candidates</a></li>
+                <li><a href="#">Employers Dashboard</a></li>
+                <li><a href="#">Applications</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <p>© 2022 AlwaysApply - Job Portal. All rights reserved</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
 </body>
+
 </html>

@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{      
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+body{
+    
+    background-color: white;
+}
+
+:root {
+    --main-color: #3076D7;
+    --secondry-color: ;
+    --background-color:#F0F6FE;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Pour les écrans très larges (plus de 1600px) */
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+/* Pour les écrans de taille moyenne (tablettes ou petits ordinateurs, entre 768px et 1200px) */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+/* Pour les tablettes et petits écrans (entre 600px et 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Pour les téléphones mobiles (moins de 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+header .logo {
+   
+}
+
+header .logo img{
+    width: 300px;
+    padding: 10px;
+}
+
+header .menu-burger {
+ display: none;
+}
+header ul{
+    list-style: none;
+    display: flex;    
+}    
+
+header ul  li {
+    padding: 10px;
+}
+
+header ul  li a {
+    text-decoration: none;
+}
+
+header .compte {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header .menu-burger {
+        display: block;
+       }
+    header ul {
+        display: none;
+    }   
+    header .compte {
+        display: none;
+    }
+    nav .menu-burger:hover+ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 107px;
+        left: 0;
+        width: 250px;
+    }
+    
+}
+header .compte button {
+    padding: 10px;
+}
+
+header .compte .sing-up {
+    background-color: white;
+    border: 1px solid black;
+    color: var(--main-color);
+}
+
+header .compte .log-in {
+    background-color: var(--main-color);
+    border: 1px solid black;
+    color: white;
+}
+.landing {
+    background-image: url('../images/landing.png');
+    height: 80vh;
+    background-size :cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing .content >* {
+    text-align: center;
+    padding: 10px;
+}
+
+.landing .content h1 {
+    font-weight: 500;
+}
+
+.landing .content p {
+    font-size: 20px;
+}
+
+.landing .content p span {
+    color : var(--main-color)
+}
+.showin-jobs {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.showin-jobs .filter  {
+    min-width: 350px;
+    border-right: 1px solid black;
+    padding: 5px;
+}
+
+.showin-jobs .filter> div   {
+    width: 80%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.showin-jobs .filter  h3 {
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.showin-jobs  select {
+    width: 100%;
+    border: 1px solid black; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.showin-jobs form input {
+    width: 100%;
+    border: 1px solid black; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.showin-jobs form  i {
+    position: absolute;
+    left: 90%;
+    top: 55%;
+    color: var(--main-color)
+}
+
+.showin-jobs form .check {
+    width: 10%;
+    margin-bottom: 15px;
+}
+
+.showin-jobs .filter .recruiting{
+   background-image: url('../images/recruiting.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 200px;
+   position: relative;
+   padding: 30px;
+   border-radius: 10px;
+}
+
+.showin-jobs .filter .recruiting::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+     border-radius: 10px; 
+
+    
+}
+
+.showin-jobs .filter .recruiting >* {
+    position: absolute;
+    z-index: 1000;
+    left: 15%;
+    color: white;
+}
+
+.showin-jobs .filter .recruiting  h1 {
+   
+}
+.showin-jobs .filter .recruiting  p {
+    top: 40%;
+}
+
+.showin-jobs .filter .recruiting  button {
+    top: 65%;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    color: var(--main-color);
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.showin-jobs .post h3 {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.showin-jobs .post .more {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.showin-jobs .cart {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+}
+.showin-jobs .cart  .pernt-cart {
+    border: 1px solid var(--main-color);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 30px 40px  auto 30px 40px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+} 
+.showin-jobs .cart  .pernt-cart i {
+ text-align: center;
+padding: 5px;
+}
+
+.showin-jobs .cart  .pernt-cart .type-employment {
+    background-color: rgb(214, 105, 214);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    grid-column: 2 /4;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.showin-jobs .cart  .pernt-cart .date-post {
+    grid-column: 4/6;   
+    color: green;
+   font-size: 10px;
+   padding: 5px;
+}
+
+.showin-jobs .cart  .pernt-cart .company-logo {
+    grid-column: 3/ 4;
+    padding: 20px;
+}
+
+.showin-jobs .cart  .pernt-cart .offer {
+    grid-column: 1 / 4;
+    color: var(--main-color);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.showin-jobs .cart  .pernt-cart .company-name {
+    grid-column: 1 / 4;
+    padding-bottom: 10px;
+}
+
+.showin-jobs .cart  .pernt-cart .location {
+    display: flex;
+    grid-column: 1 / 4;
+    color: gray;
+}
+.showin-jobs .cart  .pernt-cart .locatio i {
+    font-size: 10px;
+    padding: 0;
+}
+
+.showin-jobs .cart  .pernt-cart .salary {
+    grid-column: 1 / 4;
+    padding-bottom: 10px;
+}
+
+.showin-jobs .cart  .pernt-cart .detail {
+    grid-column: 3 / 4; 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* job premium  */
+
+.premium {
+    background-color: var(--main-color);
+}
+
+.premium .container {
+    display: flex;
+    align-items: center;
+    
+ 
+}
+
+.premium .container .content {
+    flex-basis: 50%;
+}
+
+.premium .image {
+    flex-basis: 50%;
+}
+
+.premium .image img {
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
