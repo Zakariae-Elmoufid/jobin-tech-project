@@ -127,3 +127,31 @@ header .compte .log-in {
     color: white;
 }
 /* ====================*******===================== */
+.offericone
+{
+position: absolute;
+width: 19px;
+height: 34px;
+left: 400px;
+top: 115px;
+} 
+.offertitre
+{
+    padding-top: 100px;
+    text-align: center;
+    background-image:url('../images/image\ header.jpg');
+    background-size: cover;
+    height: 250PX;
+    
+}
+.offericone img
+{
+    width:490px;
+}
+.parent-offer
+{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 10px 10px 10px;
+    grid-template-rows: 5;
+}
