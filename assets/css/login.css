@@ -1,0 +1,46 @@
+.landing {
+    background-image: url('../images/landing.png');
+    height: 80vh;
+    background-size :cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing .content >* {
+    text-align: center;
+    padding: 10px;
+}
+
+.landing .content h1 {
+    font-weight: 500;
+}
+
+.landing .content p {
+    font-size: 20px;
+}
+
+.landing .content p span {
+    color : var(--main-color)
+}
+
+.login .container {
+    margin-top: 100px;
+    display: flex;
+   gap: 50px;
+}
+
+.login form {
+    flex-basis: 50%;
+}
+
+.login .image {
+    flex-basis: 50%;
+}
+
+
+.login .image img {
+    width: 300px;
+}
+.login 
+
