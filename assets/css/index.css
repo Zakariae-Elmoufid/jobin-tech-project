@@ -55,79 +55,77 @@ body{
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    padding: 0 50px;
+    background-color: white;
+    font-family: Arial, sans-serif;
 }
 
-header .logo {
-   
+.logo img {
+    width: 150px;
 }
 
-header .logo img{
-    width: 300px;
-    padding: 10px;
-}
-
-header .menu-burger {
- display: none;
-}
-header ul{
+nav ul {
     list-style: none;
-    display: flex;    
-}    
-
-header ul  li {
-    padding: 10px;
+    display: flex;
+    gap: 30px; /* Add spacing between menu items */
+    margin: 0;
+    padding: 0;
 }
 
-header ul  li a {
+nav ul li a {
     text-decoration: none;
+    color: #000;
+    font-weight: 500;
 }
 
-header .compte {
+nav ul li a:hover {
+    color: #3076D7;
+}
+
+.right-buttons {
     display: flex;
     gap: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    header .menu-burger {
-        display: block;
-       }
-    header ul {
-        display: none;
-    }   
-    header .compte {
-        display: none;
-    }
-    nav .menu-burger:hover+ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: var(--background-color);
-        position: absolute;
-        top: 107px;
-        left: 0;
-        width: 250px;
-    }
-    
-}
-header .compte button {
-    padding: 10px;
-}
-
-header .compte .sing-up {
-    background-color: white;
-    border: 1px solid black;
-    color: var(--main-color);
-}
-
-header .compte .log-in {
-    background-color: var(--main-color);
-    border: 1px solid black;
+header .signupbtn {
+    background-color: #3076D7;
     color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
 }
+
+header .signinbtn {
+    background-color: white;
+    color: #3076D7;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #3076D7;
+}
+
+header .signinbtn img {
+    width: 20px;
+}
+
+header .signupbtn img {
+    width: 20px;
+}
+
+
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -605,8 +603,8 @@ form button {
 /*footer*/
 
 .footer {
- background: rgb(146,182,232);
-background: linear-gradient(50deg, rgba(146,182,232,1) 0%, rgba(240,246,254,1) 50%, rgba(127,163,214,1) 100%);
+    background: rgb(146,182,232);
+    background: linear-gradient(50deg, rgba(146,182,232,1) 0%, rgba(240,246,254,1) 50%, rgba(127,163,214,1) 100%);
     text-align: center;
     color: #6c7b8a;
     padding-top: 20px;
