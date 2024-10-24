@@ -104,8 +104,9 @@ header .signupbtn {
 }
 
 header .signinbtn {
-    background-color: white;
+    background-color: #F0F6FE;
     color: #3076D7;
+    border: none;
     border-radius: 9px;
     width: 120px;
     height: 40px;
@@ -114,7 +115,6 @@ header .signinbtn {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border: 2px solid #3076D7;
 }
 
 header .signinbtn img {
@@ -124,29 +124,123 @@ header .signinbtn img {
 header .signupbtn img {
     width: 20px;
 }
+.right-buttons a{
+    text-decoration: none;
+    color: #3076D7;
+}
+.right-buttons .signupbtn a{
+    text-decoration: none;
+    color: white;
+}
 
+/*hero section */
 
 .hero {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     background-color: #F0F6FE;
-    border-radius: 50px;
-    height: 75vh;
+    border-radius: 20px;
+    padding: 40px;
     align-items: center;
     justify-content: center;
-    padding: 20px; 
-}
-
-.hero img {
-    width: 90%; 
-    max-width: 450px; 
+    text-align: left;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    font-family: "Rubik", medium;
-    text-align: center; 
+    font-size: 3.5rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
 }
+
+.hero h1 span {
+    color: #3076D7;
+    text-decoration: underline;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+form {
+    border: solid 1px rgba(37, 36, 36, 0.171);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form input {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+form input:last-child {
+    border-right: none;
+}
+
+form button {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #3076D7;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero p {
+        flex-direction: column;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+
+    .hero img {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+}   
+/*categories section*/
 .categories {
     padding: 30px 0;
     background-color: #fff;
@@ -214,37 +308,6 @@ header .signupbtn img {
 }
 
 
-form {
-    border: solid 1px rgba(37, 36, 36, 0.171);
-    border-radius: 10px;
-    padding: 10px;
-    background-color: white;
-    margin-top: 30px;
-}
-
-form input {
-    width: 100%; 
-    max-width: 200px; 
-    height: 40px;
-    border: none;
-    background-color: white;
-    font-weight: 500;
-    font-size: 16px;
-    padding-left: 20px;
-}
-
-form button {
-    width: 100px;
-    height: 40px;
-    color: white;
-    background-color: rgba(48, 48, 245, 0.76);
-    border: none;
-    border-radius: 5px;
-}
-
-.inp-1 {
-    border-right: solid 2px rgba(54, 52, 52, 0.568);
-}
 
 /* About section styles */
 .about {
@@ -261,13 +324,18 @@ form button {
 
 .about-image img {
     width: 100%;
-    max-width: 500px;
+    max-width: 900px;
 }
 
 .about-text h2 {
-    font-size: 28px;
+    font-size: 35px;
     color: #000;
     margin-bottom: 20px;
+}
+.about-text h3 {
+    font-size: 20px;
+    color: #3076D7;
+    margin-bottom: 10px;
 }
 
 .about-text ul {
@@ -617,34 +685,35 @@ form button {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 20px;
   }
   
   .footer-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px; 
   }
   
   .footer-logo img {
-    width: 250px;
+    width: 200px; 
     margin-bottom: 10px;
+    
   }
   
-  .footer-logo p {
-    font-size: 24px;
-    color: #4285f4;
-    font-weight: bold;
-  }
+  
   
   .footer-links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 700px;
   }
   
   .footer-links div {
-    margin: 0 20px;
+    margin: 10px 20px;
   }
   
   .footer-links h3 {
@@ -685,5 +754,35 @@ form button {
   
   .social-icons a:hover {
     color: #357ae8;
+  }
+  
+  /* Responsive pour les petits écrans */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .footer-links div {
+      margin: 10px 0; 
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      font-size: 12px; 
+      text-align: center;
+    }
+  
+    .footer-logo img {
+      width: 150px; 
+      align-items: center;
+      justify-content: center;
+    }
   }
   
