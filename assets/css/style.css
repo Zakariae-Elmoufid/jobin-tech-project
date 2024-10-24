@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{      
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+body{
+    
+    background-color: white;
+}
+
+:root {
+    --main-color: #3076D7;
+    --secondry-color: ;
+    --background-color:#F0F6FE;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: 303030;
+}
+
+nav ul li a:hover {
+    color: #3076D7;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .signupbtn {
+    background-color: #3076D7;
+    color: white;
+    border-radius: 9px;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+}
+
+header .signinbtn {
+    background-color: white;
+    color: #3076D7;
+    border-radius: 9px;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #3076D7;
+}
+
+header .signinbtn img {
+    width: 20px;
+}
+
+header .signupbtn img {
+    width: 20px;
+}
