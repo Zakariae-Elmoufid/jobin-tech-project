@@ -1,155 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/find-job.css" />
     <title>emploiye</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="logo">
-        <img src="../assets/images/image.png" alt="logo" />
-      </div>
+        <div class="logo">
+            <img src="../assets/images/image.png" alt="logo" />
+        </div>
 
-      <div class="menu-burger">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+        <div class="menu-burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Find Jobs</a></li>
-        <li><a href="">Post a Job</a></li>
-        <li><a href="">Contact us</a></li>
-      </ul>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Find Jobs</a></li>
+            <li><a href="">Post a Job</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
 
-      <div class="compte">
-        <button class="sing-up">
-          <a>Sing Up</a>
-          <i class="fa-solid fa-right-to-bracket"></i>
-        </button>
-        <button class="log-in">
-          <a>Log In</a>
-          <i class="fa-solid fa-right-to-bracket"></i>
-        </button>
-      </div>
+        <div class="compte">
+            <button class="sing-up">
+                <a>Sing Up</a>
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+            <button class="log-in">
+                <a>Log In</a>
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </div>
     </header>
 
     <section class="landing">
-      <div class="content">
-        <h1>the most exciting jobs</h1>
-        <p>home -<span>find jobs</span></p>
-      </div>
+        <div class="content">
+            <h1>the most exciting jobs</h1>
+            <p>home -<span>find jobs</span></p>
+        </div>
     </section>
 
     <section class="showin-jobs container">
-      <div class="filter">
-        <div>
-          <h3>Category</h3>
-          <form>
-            <select name="" id="Category">
-              <option value="" disabled selected>select Category</option>
-              <option value="">digsin</option>
-              <option value="">front-end</option>
-              <option value="">back-end</option>
-            </select>
-          </form>
-        </div>
 
-        <div>
-          <h3>searsh</h3>
-          <form>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="searsh your job" />
-          </form>
-        </div>
-        <div>
-          <h3>Location</h3>
-          <form>
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="searsh location" />
-          </form>
-        </div>
-        <div>
-
-          <h3>Date Postes</h3>
-          <form>
+        <div class="filter">
             <div>
-              <input class="check" type="checkbox" id="select1" />
-              <label for="select1">Last hour</label>
+                <h3>Category</h3>
+                <form>
+                    <select name="" id="Category">
+                        <option value="" disabled selected>select Category</option>
+                        <option value="">digsin</option>
+                        <option value="">front-end</option>
+                        <option value="">back-end</option>
+                    </select>
+                </form>
+            </div>
+
+            <div>
+                <h3>searsh</h3>
+                <form>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="searsh your job" />
+                </form>
             </div>
             <div>
-                <input class="check" type="checkbox" id="select2" />
-                <label for="select2">Last 24  hours</label>
-              </div>
-              <div>
-                <input class="check" type="checkbox" id="select3" />
-                <label for="select3">Last  7 days</label>
-              </div>
-              <div>
-                <input class="check" type="checkbox" id="select5" />
-                <label for="select4">Last 14 days</label>
-              </div> 
-              <div>
-                <input class="check" type="checkbox" id="select6" />
-                <label for="select6">Last 30 days</label>
-              </div> 
-          </form>
-
-          <h3>Type of employment</h3>
-          <form>
-            <div>
-              <input class="check" type="checkbox" id="select1" />
-              <label for="select1">Freelance</label>
+                <h3>Location</h3>
+                <form>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="searsh location" />
+                </form>
             </div>
             <div>
-                <input class="check" type="checkbox" id="select2" />
-                <label for="select2">Full time</label>
-              </div>
-              <div>
-                <input class="check" type="checkbox" id="select3" />
-                <label for="select3">Intership</label>
-              </div>
-              <div>
-                <input class="check" type="checkbox" id="select5" />
-                <label for="select4">Part time</label>
-              </div> 
-          </form>
-        </div>
-        <div class="recruiting">
-          <h3>Recruiting</h3>
-          <p>Get Best Matched Jobs On your
-              Email. Add Resume NOW!</p>
-              <button>Read More</button>
-        </div>
-      </div>
 
-      <div class="cart">
-        <h3>Showing 2,150 jobs</h3>
-       <div class="pernt-cart">
-            <i class="fa-regular fa-bookmark"></i>
-            <p class="type-employment">intirship</p>
-            <p class="date-post">2 days ago</p>
-         
-         <div class="company-logo">
-            <img src="../assets/images/company-logo.png" alt="">
-         </div>
-         
-            <h4 class="offer">senior full stack develloper</h4>
-            <p class="company-name">Capgemini</p>
-            <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>casablanca,maroc</p>
+                <h3>Date Postes</h3>
+                <form>
+                    <div>
+                        <input class="check" type="checkbox" id="select1" />
+                        <label for="select1">Last hour</label>
+                    </div>
+                    <div>
+                        <input class="check" type="checkbox" id="select2" />
+                        <label for="select2">Last 24 hours</label>
+                    </div>
+                    <div>
+                        <input class="check" type="checkbox" id="select3" />
+                        <label for="select3">Last 7 days</label>
+                    </div>
+                    <div>
+                        <input class="check" type="checkbox" id="select5" />
+                        <label for="select4">Last 14 days</label>
+                    </div>
+                    <div>
+                        <input class="check" type="checkbox" id="select6" />
+                        <label for="select6">Last 30 days</label>
+                    </div>
+                </form>
+
+                <h3>Type of employment</h3>
+                <form>
+                    <div>
+                        <input class="check" type="checkbox" id="select1" />
+                        <label for="select1">Freelance</label>
+                    </div>
+                    <div>
+                        <input class="check" type="checkbox" id="select2" />
+                        <label for="select2">Full time</label>
+                    </div>
+                    <div>
+                        <input class="check" type="checkbox" id="select3" />
+                        <label for="select3">Intership</label>
+                    </div>
+                    <div>
+                        <input class="check" type="checkbox" id="select5" />
+                        <label for="select4">Part time</label>
+                    </div>
+                </form>
             </div>
-            <p class="salary">satary:$30,000 -$55,000</p>
-             
-                <a href="" class="detail">view all</a>
-             
-         </div>
+            <div class="recruiting">
+                <h3>Recruiting</h3>
+                <p>Get Best Matched Jobs On your
+                    Email. Add Resume NOW!</p>
+                <button>Read More</button>
+            </div>
+        </div>
 
-       </div>
-      </div>
+        <div class="post">
+
+            <h3>Showing 2,150 jobs</h3>
+
+            <div class="cart">
+
+                <div class="pernt-cart">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="type-employment">intirship</p>
+                    <p class="date-post">2 days ago</p>
+
+                    <div class="company-logo">
+                        <img src="../assets/images/company-logo.png" alt="">
+                    </div>
+
+                    <h4 class="offer">senior full stack develloper</h4>
+                    <p class="company-name">Capgemini</p>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>casablanca,maroc</p>
+                    </div>
+                    <p class="salary">satary:$30,000 -$55,000</p>
+
+                    <a href="" class="detail">view detail</a>
+
+                </div>
+
+                <div class="pernt-cart">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="type-employment">intirship</p>
+                    <p class="date-post">2 days ago</p>
+
+                    <div class="company-logo">
+                        <img src="../assets/images/company-logo.png" alt="">
+                    </div>
+
+                    <h4 class="offer">senior full stack develloper</h4>
+                    <p class="company-name">Capgemini</p>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>casablanca,maroc</p>
+                    </div>
+                    <p class="salary">satary:$30,000 -$55,000</p>
+
+                    <a href="" class="detail">view detail</a>
+
+                </div>
+
+                <div class="pernt-cart">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="type-employment">intirship</p>
+                    <p class="date-post">2 days ago</p>
+
+                    <div class="company-logo">
+                        <img src="../assets/images/company-logo.png" alt="">
+                    </div>
+
+                    <h4 class="offer">senior full stack develloper</h4>
+                    <p class="company-name">Capgemini</p>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>casablanca,maroc</p>
+                    </div>
+                    <p class="salary">satary:$30,000 -$55,000</p>
+
+                    <a href="" class="detail">view detail</a>
+
+                </div>
+
+
+                <div class="pernt-cart">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="type-employment">intirship</p>
+                    <p class="date-post">2 days ago</p>
+
+                    <div class="company-logo">
+                        <img src="../assets/images/company-logo.png" alt="">
+                    </div>
+
+                    <h4 class="offer">senior full stack develloper</h4>
+                    <p class="company-name">Capgemini</p>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>casablanca,maroc</p>
+                    </div>
+                    <p class="salary">satary:$30,000 -$55,000</p>
+
+                    <a href="" class="detail">view detail</a>
+
+                </div>
+
+                <div class="pernt-cart">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="type-employment">intirship</p>
+                    <p class="date-post">2 days ago</p>
+
+                    <div class="company-logo">
+                        <img src="../assets/images/company-logo.png" alt="">
+                    </div>
+
+                    <h4 class="offer">senior full stack develloper</h4>
+                    <p class="company-name">Capgemini</p>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>casablanca,maroc</p>
+                    </div>
+                    <p class="salary">satary:$30,000 -$55,000</p>
+
+                    <a href="" class="detail">view detail</a>
+
+                </div>
+
+                <div class="pernt-cart">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="type-employment">intirship</p>
+                    <p class="date-post">2 days ago</p>
+
+                    <div class="company-logo">
+                        <img src="../assets/images/company-logo.png" alt="">
+                    </div>
+
+                    <h4 class="offer">senior full stack develloper</h4>
+                    <p class="company-name">Capgemini</p>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>casablanca,maroc</p>
+                    </div>
+                    <p class="salary">satary:$30,000 -$55,000</p>
+
+                    <a href="" class="detail">view detail</a>
+
+                </div>
+
+            </div>
+
+            <a href="" class="more">show more</a>
+
+        </div>
+
     </section>
-  </body>
+
+    <section class="premium ">
+        <div class="container">
+            <div class="content">
+                <h3> job search faster with Premium</h3>
+                <p>
+                    Accessing company insights like strategic priorities and headcount
+                    trends helps businesses align their goals and resources effectively.
+                    It provides a clear picture of growth patterns and operational focus,
+                    allowing for better decision-making and long-term planning.
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="../assets/images/women.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>

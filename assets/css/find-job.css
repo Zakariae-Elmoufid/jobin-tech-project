@@ -164,7 +164,8 @@ header .compte .log-in {
 }
 .showin-jobs .filter  {
     min-width: 350px;
-    background-color: red;
+    border-right: 1px solid black;
+    padding: 5px;
 }
 
 .showin-jobs .filter> div   {
@@ -224,6 +225,8 @@ header .compte .log-in {
     opacity: 0.7;
     top: 0;
     left: 0;
+     border-radius: 10px; 
+
     
 }
 
@@ -251,22 +254,41 @@ header .compte .log-in {
     border-radius: 10px;
 }
 
-.showin-jobs .cart h3 {
+.showin-jobs .post h3 {
     text-align: center;
-    margin-bottom: 50px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.showin-jobs .post .more {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 10px auto;
 }
 
 .showin-jobs .cart {
-   
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
 }
 .showin-jobs .cart  .pernt-cart {
     border: 1px solid var(--main-color);
-    padding: 10px;
+    padding: 15px;
     display: grid;
-    grid-template-columns: 50px 50px  auto 1fr 1fr;
+    grid-template-columns: 30px 40px  auto 30px 40px;
+    border-radius: 20px;
+    background-color: var(--background-color);
 } 
 .showin-jobs .cart  .pernt-cart i {
-text-align: center;
+ text-align: center;
 padding: 5px;
 }
 
@@ -275,6 +297,7 @@ padding: 5px;
     border-radius: 5px;
     color: white;
     padding: 5px;
+    font-size: 10px;
     grid-column: 2 /4;
     width: fit-content;
     margin-left: 20px;
@@ -283,7 +306,8 @@ padding: 5px;
 .showin-jobs .cart  .pernt-cart .date-post {
     grid-column: 4/6;   
     color: green;
-    margin-right: 10px;
+   font-size: 10px;
+   padding: 5px;
 }
 
 .showin-jobs .cart  .pernt-cart .company-logo {
@@ -327,6 +351,34 @@ padding: 5px;
     padding: 10px;
     border-radius: 10px;
 }
+
+/* job premium  */
+
+.premium {
+    background-color: var(--main-color);
+}
+
+.premium .container {
+    display: flex;
+    align-items: center;
+    
+ 
+}
+
+.premium .container .content {
+    flex-basis: 50%;
+}
+
+.premium .image {
+    flex-basis: 50%;
+}
+
+.premium .image img {
+    width: 500px;
+}
+
+
+
 
 
 
