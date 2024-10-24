@@ -131,41 +131,50 @@ header .compte .log-in {
     border: 1px solid black;
     color: white;
 }
-.hero{
+.hero {
     background-color: #F0F6FE;
     border-radius: 50px;
     height: 75vh;
     display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 20px; /* Add padding for better spacing */
 }
-.hero img{
-    width: 450px;
+
+.hero img {
+    width: 100%; 
+    max-width: 450px; /* Set a maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
 }
-.hero h1{
+
+.hero h1 {
     font-size: 2.5rem;
     font-family: "Rubik", medium;
+    text-align: center; /* Center the text */
 }
-form{
-   border: solid 1px rgba(37, 36, 36, 0.171);
-   border-radius: 10px;
-   padding: 10px;
-   background-color: white;
-   margin-top: 30px;
+
+form {
+    border: solid 1px rgba(37, 36, 36, 0.171);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 30px;
 }
-form input{
-    width: 200px;
+
+form input {
+    width: 100%; /* Make input fields responsive */
+    max-width: 200px; /* Set a maximum width */
     height: 40px;
     border: none;
-   
     background-color: white;
-   
     font-weight: 500;
     font-size: 16px;
     padding-left: 20px;
 }
-form button{
+
+form button {
     width: 100px;
     height: 40px;
     color: white;
@@ -173,12 +182,13 @@ form button{
     border: none;
     border-radius: 5px;
 }
-.inp-1{
+
+.inp-1 {
     border-right: solid 2px rgba(54, 52, 52, 0.568);
 }
 
-.about-1{
-   
+/* About section styles */
+.about-1 {
     background-color: #F0F6FE;
     width: 100%;
     display: flex;
@@ -187,15 +197,54 @@ form button{
     gap: 60px;
 }
 
-.about-1 h3{
+.about-1 h3 {
     color: #3076D7;
 }
 
-.icons-content div{
+.icons-content div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+
+    .hero-content, .hero-image {
+        flex: 1; 
+        padding: 20px;
+    }
+
+    form {
+        display: flex;
+flex-direction: row;        justify-content: space-between; 
+        max-width: 600px; 
+        width: 100%; 
+    }
+
+    form input {
+        margin-right: 10px; 
+        flex: 1; 
+    }
+
+    form button {
+        flex-shrink: 0; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem; 
+    }
+
+    form button {
+        width: 120px; 
+    }
+}
+
 
 
 
