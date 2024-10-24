@@ -57,27 +57,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 30px;
     background-color: white;
-    font-family: Arial, sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .logo img {
-    width: 150px;
+    width: 200px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Add spacing between menu items */
+    gap: 30px; 
     margin: 0;
     padding: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
-    font-weight: 500;
+    color: 303030;
 }
 
 nav ul li a:hover {
@@ -92,7 +92,7 @@ nav ul li a:hover {
 header .signupbtn {
     background-color: #3076D7;
     color: white;
-    border-radius: 5px;
+    border-radius: 9px;
     width: 120px;
     height: 40px;
     font-size: 17px;
@@ -106,7 +106,7 @@ header .signupbtn {
 header .signinbtn {
     background-color: white;
     color: #3076D7;
-    border-radius: 5px;
+    border-radius: 9px;
     width: 120px;
     height: 40px;
     font-size: 17px;
