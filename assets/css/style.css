@@ -124,3 +124,89 @@ header .signinbtn img {
 header .signupbtn img {
     width: 20px;
 }
+
+.footer {
+    background: rgb(146,182,232);
+    background: linear-gradient(50deg, rgba(146,182,232,1) 0%, rgba(240,246,254,1) 50%, rgba(127,163,214,1) 100%);
+    text-align: center;
+    color: #6c7b8a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 24px;
+    color: #4285f4;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .footer-links div {
+    margin: 0 20px;
+  }
+  
+  .footer-links h3 {
+    color: #4285f4;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #6c7b8a;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #d8dde3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #4285f4;
+  }
+  
+  .social-icons a:hover {
+    color: #357ae8;
+  }
+  
