@@ -89,6 +89,11 @@ nav ul li a:hover {
     gap: 10px;
 }
 
+.right-buttons a{
+    text-decoration: none;
+}
+
+
 header .signupbtn {
     background-color: #3076D7;
     color: white;
@@ -119,11 +124,14 @@ header .signinbtn {
 
 header .signinbtn img {
     width: 20px;
+    color: var(--main-color);
 }
 
 header .signupbtn img {
     width: 20px;
+    
 }
+
 
 .footer {
     background: rgb(146,182,232);

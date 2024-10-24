@@ -67,7 +67,12 @@
 @media(max-width: 768px){
     .login .container {
         flex-direction: column;
+    } 
+    .login .image {
+       align-self: center;
+
     }
+  
 }
 
 
