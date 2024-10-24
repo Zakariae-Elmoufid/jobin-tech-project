@@ -133,10 +133,25 @@ header .compte .log-in {
     padding-top: 100px;
     text-align: center;
     background-image:url('../images/image\ header.jpg');
+    background-size: cover;
     height: 250PX;
-   
+    
 }
+/* .contacttitre h1::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/contact.png);
+    background-size: 300px;
+    width: 20%;
+    height: 1000%;
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-1%);
+} */
+
+
 .contacttitre h1{
+    position: relative;
     font-size: 33px;
 }
 .contacticone
@@ -145,12 +160,12 @@ header .compte .log-in {
 position: absolute;
 width: 19px;
 height: 34px;
-left: 460px;
+left: 503px;
 top: 215px;
-}
+} 
 .contacticone img
 {
-    width:333px; 
+    width:250px;
 }
 section .parent-contact
 {
@@ -161,7 +176,17 @@ section .parent-contact
     justify-content:space-between;
     padding: 5em;
     padding-top: 164px;
-}
+} 
+
+ /* @media screen and (max-width: 750px) {
+ .parent-contact {
+            flex-direction: column;
+                 }
+  .contacttitre h1{
+    transform: translateX(-2%);
+  }
+    } */
+
 
  section .parent-contact .contact1 form
  {
