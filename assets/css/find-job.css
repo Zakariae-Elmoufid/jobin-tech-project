@@ -114,21 +114,21 @@ body{
     border-radius: 10px;
 }
 
-.showin-jobs form input {
+.showin-jobs .form input {
     width: 100%;
     border: 1px solid black; 
     padding: 10px;
     border-radius: 10px;
 }
 
-.showin-jobs form  i {
+.showin-jobs .form  i {
     position: absolute;
     left: 90%;
-    top: 55%;
+    top: -50%;
     color: var(--main-color)
 }
 
-.showin-jobs form .check {
+.showin-jobs .form .check {
     width: 10%;
     margin-bottom: 15px;
 }
