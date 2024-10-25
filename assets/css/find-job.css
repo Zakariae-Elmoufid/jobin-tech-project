@@ -123,11 +123,15 @@ body{
 
 .showin-jobs .form  i {
     position: absolute;
-    left: 90%;
-    top: -50%;
+    left: 90%;;
+    top: 65%;
     color: var(--main-color)
 }
-
+@media (max-width: 768px) {
+    .showin-jobs .form  i {
+        left: 95%;
+    }
+}
 .showin-jobs .form .check {
     width: 10%;
     margin-bottom: 15px;
