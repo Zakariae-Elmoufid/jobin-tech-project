@@ -1,0 +1,114 @@
+
+.offericone
+{
+position: absolute;
+width: 300px;
+left: 40%;
+top: 25%;
+} 
+.offertitre
+{
+    padding-top: 100px;
+    text-align: center;
+    background-image:url('../images/image\ header.jpg');
+    background-size: cover;
+    height: 250PX;
+    
+}
+
+.offericone img {
+    max-width: 100%;
+    z-index: 1000;
+
+}
+.parent-offer
+{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+#offer1 form
+{
+    margin-left: 62px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+        gap: 20PX;
+
+   
+}
+.case,
+.address
+{
+    display: flex;
+    flex-direction: column;
+    margin:  20px;
+    position: relative;
+
+}
+.case i
+{
+position: absolute;
+top: 60%;
+left: 2%;
+
+
+}
+
+.case input
+{
+    border: 1px solid  black;
+    padding: 10px;
+    margin-top: 10px;
+    padding-left: 30PX;
+
+} 
+
+
+.address  {
+   grid-column: 1/4;
+
+}
+.address input
+{
+        border: 1px solid ;
+        padding: 10px;
+        margin-top: 10px;
+        padding-left: 30PX;
+    
+    
+}
+
+.address i
+{
+    position: absolute;
+    top: 60%;
+    left: 1%;
+}
+#btnoffer
+{
+   height: 35px;
+   background-color: #3569b2;
+   color: white;
+   font-size: 16PX;
+   border-radius: 5px;
+   border: 3PX;
+   cursor: pointer;
+   text-align: center;
+   margin-left:20px ;
+   padding: 10px;
+ 
+}
+@media (max-width: 768px){
+    #offer1 form
+{
+    grid-template-columns: 1fr;   
+}
+.address  {
+    grid-column: 1/1;
+ }
+ .offericone
+{
+width: 300px;
+left: 20%;
+top: 20%;
+} 
+}

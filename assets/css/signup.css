@@ -1,0 +1,69 @@
+
+
+/* ======================**********************=================== */
+
+section .signtitre
+{
+    padding-top: 120px;
+    text-align: center;
+    
+}
+.signtitre h1{
+    font-size: 33px;
+}
+section .parent-sign
+{
+    background: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
+    gap: 90px;
+    padding: 5em;
+}
+
+ section .parent-sign .sign1 form
+ {
+    background-color: rgba(185, 235, 242, 0.3);
+    padding: 33px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+
+ }
+ .sign1 input
+ {
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid black;
+ }
+ .sign1 label
+ {
+    padding-top: 26px;
+    padding-bottom: 5px;
+ }
+
+ #chbox
+ {
+  padding-top: 40px;
+  display: flex;
+  justify-content: left;
+  gap: 8px;
+
+ }
+ #chbox input
+ {
+    width: 17px;
+    cursor: pointer;
+ }
+ #btnsign
+ {
+    height: 35px;
+    background-color: #3569b2;
+    color: white;
+    font-size: 16PX;
+    border-radius: 5px;
+    border: 3PX;
+    cursor: pointer;
+
+ }

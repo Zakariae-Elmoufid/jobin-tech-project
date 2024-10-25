@@ -1,0 +1,95 @@
+
+/* ====================*******===================== */
+
+.contacttitre
+{
+    padding-top: 100px;
+    text-align: center;
+    background-image:url('../images/image\ header.jpg');
+    background-size: cover;
+    height: 250PX;
+    position: relative;
+    
+}
+.contact1 {
+
+}
+
+
+
+.contacttitre h1{
+    position: relative;
+    font-size: 33px;
+}
+.contacticone
+{
+   position: absolute;
+   left: 50%;
+   top: 40%;
+   transform: translateX(-50%);
+} 
+.contacticone img
+{
+    width:150px;
+}
+section .parent-contact
+{
+    
+    background: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
+    padding: 5em;
+    padding-top: 164px;
+} 
+
+ 
+
+
+ section .parent-contact .contact1 form
+ {
+    background-color: rgba(185, 235, 242, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 33px;
+
+ }
+ .contact1 form h1
+ {
+    font-size: 33px;
+    padding-bottom: 40px;
+    
+ }
+ .contact1 input
+ {
+    border-radius: 5px;
+    padding: 13px;
+    border: 1px solid black;
+ }
+ .contact1 textarea
+ {
+    border-radius: 5px;
+    padding: 13px;
+    border: 1px solid black;
+ }
+
+ #btncontact
+ {
+    height: 39px;
+    background-color: #3569b2;
+    color: white;
+    font-size: 16PX;
+    border-radius: 5px;
+    border: 3PX;
+    cursor: pointer;
+
+ }
+ .contact2 img{
+    width: 300px;
+ }
+
+
+
