@@ -37,7 +37,7 @@ top: 115px;
 
    
 }
-div
+.case
 {
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ div
     position: relative;
 
 }
-div i
+.case i
 {
 position: absolute;
 top: 80%;
@@ -54,7 +54,7 @@ left: 3%;
 
 }
 
-div input
+.case input
 {
     padding: 10px;
     margin-top: 10px;
@@ -66,9 +66,17 @@ div input
   grid-column: 1/4;
 
 }
+.address input
+{
+    
+        padding: 10px;
+        margin-top: 10px;
+        padding-left: 30PX;
+    
+    
+}
 
-
-.address  i
+.address i
 {
   
     position: absolute;
