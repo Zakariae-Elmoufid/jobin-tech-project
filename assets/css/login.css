@@ -1,0 +1,78 @@
+.landing {
+    background-image: url('../images/landing.png');
+    height: 80vh;
+    background-size :cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing .content >* {
+    text-align: center;
+    padding: 10px;
+}
+
+.landing .content h1 {
+    font-weight: 500;
+}
+
+.landing .content p {
+    font-size: 20px;
+}
+
+.landing .content p span {
+    color : var(--main-color)
+}
+
+.login .container {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+.login form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.login form label {
+   padding-bottom: 5px;
+}
+.login form input {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.login form >div {
+    display: flex;
+    justify-content: space-between;
+}
+.login form  [value="login"] {
+    border: none;
+    margin-top: 60px;
+    background-color: var(--main-color);
+    color: white;
+}
+.login .image {
+    flex-basis: 50%;
+}
+
+
+.login .image img {
+    width: 300px;
+}
+
+@media(max-width: 768px){
+    .login .container {
+        flex-direction: column;
+    } 
+    .login .image {
+       align-self: center;
+
+    }
+  
+}
+
+

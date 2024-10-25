@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{      
     margin: 0;
@@ -53,6 +54,7 @@ body{
 
 
 
+>>>>>>> a8fec8ea14c18b1f43721f690722e25a4fce1ef6
 
 .landing {
     background-image: url('../images/landing.png');
@@ -353,6 +355,7 @@ padding: 5px;
         padding-top: 50px;
     }
 }
+
 
 
 
