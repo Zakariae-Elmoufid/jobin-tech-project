@@ -8,19 +8,13 @@
     background-image:url('../images/image\ header.jpg');
     background-size: cover;
     height: 250PX;
+    position: relative;
     
 }
-/* .contacttitre h1::after {
-    content: '';
-    position: absolute;
-    background-image: url(../images/contact.png);
-    background-size: 300px;
-    width: 20%;
-    height: 1000%;
-    background-repeat: no-repeat;
-    left: 50%;
-    transform: translateX(-1%);
-} */
+.contact1 {
+
+}
+
 
 
 .contacttitre h1{
@@ -29,16 +23,14 @@
 }
 .contacticone
 {
-
-position: absolute;
-width: 19px;
-height: 34px;
-left: 503px;
-top: 215px;
+   position: absolute;
+   left: 50%;
+   top: 29%;
+   transform: translateX(-50%);
 } 
 .contacticone img
 {
-    width:250px;
+    width:150px;
 }
 section .parent-contact
 {
@@ -51,24 +43,17 @@ section .parent-contact
     padding-top: 164px;
 } 
 
- /* @media screen and (max-width: 750px) {
- .parent-contact {
-            flex-direction: column;
-                 }
-  .contacttitre h1{
-    transform: translateX(-2%);
-  }
-    } */
+ 
 
 
  section .parent-contact .contact1 form
  {
     background-color: rgba(185, 235, 242, 0.3);
-    padding: 33px;
-    border-radius: 9px;
+    padding: 30px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 520px;
+    width: 500px;
     gap: 33px;
 
  }
@@ -102,15 +87,9 @@ section .parent-contact
     cursor: pointer;
 
  }
+ .contact2 img{
+    width: 300px;
+ }
 
-/* emoji headphone */
-
-/* position: absolute;
-width: 539px;
-height: 364px;
-left: 586px;
-top: 325px;
-
-background: url(.png); */
 
 
