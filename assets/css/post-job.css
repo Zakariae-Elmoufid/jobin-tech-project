@@ -97,5 +97,15 @@ left: 3%;
    text-align: center;
    margin-left:20px ;
    padding: 10px;
-
+ 
+}
+@media (max-width: 768px){
+    #offer1 form
+{
+    grid-template-columns: 1fr;   
+}
+.address  {
+    grid-column: 1/1;
+ 
+ }
 }
