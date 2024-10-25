@@ -154,6 +154,7 @@ header .signupbtn a {
   }
 
   .menu:hover + nav {
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: stretch;
